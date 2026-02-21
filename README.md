@@ -1,3 +1,3 @@
-Make a game w/ ASCII Level loader
+Week 5 Assignment for Code Lab 1: Make a game w/ multiple ASCII levels
 
 to be continued...
