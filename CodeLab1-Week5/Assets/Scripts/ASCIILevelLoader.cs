@@ -16,6 +16,7 @@ public class ASCIILevelLoader : MonoBehaviour
     public GameObject wall;
     public GameObject player;
     public GameObject door;
+    public GameObject bridge;
     public string fileLocation; //declares string for file location
 
     string fullPath; //full path to the current level file
@@ -55,6 +56,7 @@ public class ASCIILevelLoader : MonoBehaviour
         else
         {
             Destroy(gameObject);
+            Debug.Log("Level destroyed!");
         }
 
         //creating full path to file location
@@ -69,6 +71,7 @@ public class ASCIILevelLoader : MonoBehaviour
         
     }
 
+    //load level
     public void LoadLevel()
     {
         Destroy(loadedLevel);
@@ -148,13 +151,16 @@ public class ASCIILevelLoader : MonoBehaviour
                     case 'a':
                         newObject = Instantiate<GameObject>(water);
                         break;
+                    case 'H':
+                        newObject = Instantiate<GameObject>(bridge);
+                        break;
                     default:
                         break;
                 }
                 if (newObject != null)
                 {
                     newObject.transform.position = new Vector2(-xOffset + x, yOffset - y);
-                    newObject.transform.SetParent(loadedLevel.transform.parent);
+                    newObject.transform.SetParent(loadedLevel.transform);
                 }
 
                 // if (currentChar == 'W')
