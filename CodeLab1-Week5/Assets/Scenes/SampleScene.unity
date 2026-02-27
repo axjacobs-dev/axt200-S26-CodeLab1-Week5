@@ -589,10 +589,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50a32698e8027084fb00366f9a7857df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ASCIILevelLoader
+  blackWidow: {fileID: 3548490275530877422, guid: 143d3801fe2e2c84b9ee5e3d8c9c3397, type: 3}
+  bush: {fileID: 1646059911505635746, guid: ea080746e5688e24cb206a4c07997eb6, type: 3}
+  cicada: {fileID: 6165017910773948981, guid: 12d1d24be185b6541a776636a3add1b5, type: 3}
+  farmHouse: {fileID: 497846842396178780, guid: 83ff626fd02312e47a4c9bf301666a7e, type: 3}
+  logCabin: {fileID: 8018741454383568209, guid: 2182380c21213e943b2eb1facb28bf16, type: 3}
+  smallHouse: {fileID: 1069743694662312214, guid: 2fefeabd1e5ea9a41bd27c61ace60ca6, type: 3}
+  tree: {fileID: 7098463489450881660, guid: d56c64a81b272a44c81cdc5905ef177c, type: 3}
+  water: {fileID: 6465203604327704758, guid: 63ec2aa0fbcea1144ad6a3e34229914e, type: 3}
+  whiteTree: {fileID: 3448433769212426245, guid: 2a625f0b15fdf314cb68cbe1914f2fbe, type: 3}
   wall: {fileID: 8664498467112866480, guid: 623924eedef4a134cb4176c3433731b6, type: 3}
   player: {fileID: 3316359584729526129, guid: 3c05da2b53ae8ed4fb0ad9b39946b680, type: 3}
-  goal: {fileID: 677096240067320392, guid: 79719c3a4751c0c45874261b27732db8, type: 3}
-  obstacle: {fileID: 3650780230519630328, guid: 8ec69799fc259d147b44a441274741b7, type: 3}
+  door: {fileID: 677096240067320392, guid: 79719c3a4751c0c45874261b27732db8, type: 3}
   fileLocation: Resources/Levels/Level<num>.txt
   xOffset: 0
   yOffset: 0

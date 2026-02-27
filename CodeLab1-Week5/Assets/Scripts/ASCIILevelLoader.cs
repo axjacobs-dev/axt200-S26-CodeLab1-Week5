@@ -3,11 +3,19 @@ using UnityEngine;
 
 public class ASCIILevelLoader : MonoBehaviour
 {
-    //prefab in Unity for a wall object
+    //prefab in Unity for objects
+    public GameObject blackWidow;
+    public GameObject bush;
+    public GameObject cicada;
+    public GameObject farmHouse;
+    public GameObject logCabin;
+    public GameObject smallHouse;
+    public GameObject tree;
+    public GameObject water;
+    public GameObject whiteTree;
     public GameObject wall;
     public GameObject player;
-    public GameObject goal;
-    public GameObject obstacle;
+    public GameObject door;
     public string fileLocation; //declares string for file location
 
     string fullPath; //full path to the current level file
@@ -30,9 +38,9 @@ public class ASCIILevelLoader : MonoBehaviour
     }
 
     //next to ints are the 'easy' way to resolve offsets
-    public int xOffset = 5; //number to adjust offset of level loaded location
+    public int xOffset; //number to adjust offset of level loaded location
     
-    public int yOffset = 4; //number to adjust offset of instantiated prefab
+    public int yOffset; //number to adjust offset of instantiated prefab
 
     public static ASCIILevelLoader instance;
     
@@ -102,6 +110,18 @@ public class ASCIILevelLoader : MonoBehaviour
 
                 switch (currentChar)
                 {
+                    case 'B':
+                        newObject = Instantiate<GameObject>(blackWidow);
+                        break;
+                    case 'b':
+                        newObject = Instantiate<GameObject>(bush);
+                        break;
+                    case 'w':
+                        newObject = Instantiate<GameObject>(whiteTree);
+                        break;
+                    case 'T':
+                        newObject = Instantiate<GameObject>(tree);
+                        break;     
                     case 'W':
                         newObject = Instantiate<GameObject>(wall);
                       //  newWall.transform.position = new Vector2(-xOffset + x, yOffset - y);
@@ -110,12 +130,23 @@ public class ASCIILevelLoader : MonoBehaviour
                         newObject = Instantiate<GameObject>(player);
                        // newPlayer.transform.position = new Vector2(-xOffset + x, yOffset - y);
                         break;
-                    case 'G':
-                        newObject = Instantiate<GameObject>(goal);
-                        //newGoal.transform.position = new Vector2(-xOffset + x, yOffset - y);
+                    case 'd':
+                        newObject = Instantiate<GameObject>(door);
                         break;
-                    case 'O':
-                        newObject = Instantiate<GameObject>(obstacle);
+                    case 'F':
+                        newObject = Instantiate<GameObject>(farmHouse);
+                        break;
+                    case 'R':
+                        newObject = Instantiate<GameObject>(smallHouse);
+                        break;
+                    case 'L':
+                        newObject = Instantiate<GameObject>(logCabin);
+                        break;
+                    case 'C':
+                        newObject = Instantiate<GameObject>(cicada);
+                        break;
+                    case 'a':
+                        newObject = Instantiate<GameObject>(water);
                         break;
                     default:
                         break;
