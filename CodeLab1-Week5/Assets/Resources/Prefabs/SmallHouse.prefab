@@ -100,7 +100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1695540569609968805}
   m_Layer: 0
-  m_Name: RidiculouslySmallHouse
+  m_Name: SmallHouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
